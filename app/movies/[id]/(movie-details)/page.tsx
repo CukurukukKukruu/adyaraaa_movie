@@ -14,7 +14,7 @@ export async function generateMetadata(
   props: PageDetailsProps,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
-  const { id } = props.params // ✅ FIXED
+  const { id } = props.params
 
   const movieDetails = await getMovieDetailsById(id)
 
@@ -35,7 +35,7 @@ export async function generateMetadata(
 }
 
 const MoviePage = async (props: PageDetailsProps) => {
-  const { id } = props.params // ✅ FIXED
+  const { id } = props.params
 
   const { movieCredits, movieDetails, similarMovies, recommendedMovies } =
     await populateMovieDetailsPage(id)
