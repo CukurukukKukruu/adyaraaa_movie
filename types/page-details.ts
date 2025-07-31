@@ -1,6 +1,5 @@
-type PageDetailsProps = {
-  params: { id: string }
-  searchParams: { [key: string]: string | string[] | undefined }
+export interface PageDetailsProps {
+  params: {
+    id: string
+  }
 }
-
-export type { PageDetailsProps }
