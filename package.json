@@ -1,0 +1,71 @@
+{
+  "name": "streaming-movies",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prettier:format": "prettier --write .",
+    "prettier:check": "prettier --check .",
+   "preview": "pnpm build && pnpm start",
+"deploy": "pnpm build"
+
+  },
+  "dependencies": {
+    "@next/third-parties": "15.3.3",
+    "@radix-ui/react-alert-dialog": "^1.1.1",
+    "@radix-ui/react-avatar": "^1.1.0",
+    "@radix-ui/react-dialog": "^1.1.1",
+    "@radix-ui/react-hover-card": "^1.1.1",
+    "@radix-ui/react-scroll-area": "^1.1.0",
+    "@radix-ui/react-select": "^2.1.1",
+    "@radix-ui/react-separator": "^1.1.0",
+    "@radix-ui/react-slot": "^1.1.0",
+    "@radix-ui/react-visually-hidden": "^1.2.3",
+    "@splidejs/react-splide": "^0.7.12",
+    "@tanstack/react-query": "^5.8.4",
+    "@vercel/og": "^0.6.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "cmdk": "^0.2.0",
+    "framer-motion": "^12.23.5",
+    "lucide-react": "^0.436.0",
+    "next": "15.3.5",
+    "posthog-js": "^1.256.2",
+    "query-string": "^9.1.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-intersection-observer": "^9.13.0",
+    "sonner": "^2.0.6",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss-animate": "^1.0.7",
+    "use-debounce": "^10.0.3"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.1.1",
+    "@tailwindcss/postcss": "^4.1.8",
+    "@tailwindcss/typography": "^0.5.10",
+    "@types/node": "^24.0.10",
+    "@types/react": "19.1.8",
+    "@types/react-dom": "19.1.6",
+    "@typescript-eslint/parser": "^6.12.0",
+    "eslint": "^8.54.0",
+    "eslint-config-next": "15.3.3",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-tailwindcss": "^3.13.0",
+    "husky": "^8.0.3",
+    "postcss": "^8.5.6",
+    "prettier": "^3.3.3",
+    "tailwindcss": "^4.1.11",
+    "typescript": "^5.5.4"
+  },
+  "pnpm": {
+    "overrides": {
+      "@types/react": "19.1.6",
+      "@types/react-dom": "19.1.6"
+    }
+  }
+}
